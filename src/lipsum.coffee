@@ -13,6 +13,7 @@ events = require('events')
 class Lipsum extends events.EventEmitter
   constructor: ->
     ### Class Constructor ###
+    super()
     @parser = new Parser()
     @service = new Service()
 

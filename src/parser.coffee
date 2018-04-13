@@ -12,6 +12,7 @@ events = require('events')
 class LipsumParser extends events.EventEmitter
   constructor: (payload) ->
     ### Instantiates the class with an optional payload ###
+    super()
     @_xmlParser = new XMLParser()
     @_payload = if payload? then payload else null
     @parsedOutput = null
